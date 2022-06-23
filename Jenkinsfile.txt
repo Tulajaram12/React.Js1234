@@ -8,7 +8,7 @@ pipeline
         {
             steps 
             {
-                echo 'Build App'
+                npm run build
             }
         }
 
@@ -34,7 +34,7 @@ pipeline
 
     	always
     	{
-    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'sathish.chintal@smartgig.tech'
+    		emailext body: 'Summary', subject: 'Pipeline Status', to: 'tulajaram.kamble@smartgig.tech'
     	}
 
     }
